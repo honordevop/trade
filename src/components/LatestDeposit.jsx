@@ -1,5 +1,5 @@
 import React from "react";
-import chart1 from "public/chart1.png";
+import chart1 from "public/chart1.PNG";
 import Image from "next/image";
 
 const data = [
