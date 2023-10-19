@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "@/components/Navbar";
-import ParticleBackground from "@/components/ParticleBackground";
+// import ParticleBackground from "@/components/ParticleBackground";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import WhatIs from "./WhatIs";
