@@ -25,8 +25,8 @@ const LoginForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // const email = e.target[0].value;
-    // const password = e.target[1].value;
+    const email = e.target[0].value;
+    const password = e.target[1].value;
 
     signIn("credentials", { email, password });
     router?.push("/trade");
@@ -49,14 +49,14 @@ const LoginForm = () => {
         >
           <input
             type="email"
-            onChange={(e) => setEmail(e.target.value)}
+            // onChange={(e) => setEmail(e.target.value)}
             className=" py-3 outline-none text-[20px] bg-transparent border-b-2 border-gray-300 text-black"
             placeholder="Email address"
             required
           />
           <div className="relative">
             <input
-              onChange={(e) => setPassword(e.target.value)}
+              // onChange={(e) => setPassword(e.target.value)}
               type={inputType}
               className=" py-3 outline-none text-[20px] bg-transparent border-b-2 border-gray-300 text-black w-full"
               placeholder="Password"
