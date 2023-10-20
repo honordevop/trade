@@ -40,7 +40,7 @@ const handler = NextAuth({
     }),
   ],
   pages: {
-    error: "/trade/auth",
+    error: "/trade/login",
   },
 });
 

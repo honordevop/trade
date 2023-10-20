@@ -49,7 +49,7 @@ const Transactions = () => {
   }
 
   if (session.status === "unauthenticated") {
-    router?.push("/trade/auth");
+    router?.push("/trade/login");
   }
 
   // console.log(withdrawals);

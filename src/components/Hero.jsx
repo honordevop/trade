@@ -26,13 +26,13 @@ const Hero = () => {
         <div className={`flex gap-5 cursor-pointer font-light`}>
           <Link
             className={`bground py-4 px-4 rounded-[40px] w-[120px]`}
-            href="/trade/auth"
+            href="/trade/login"
           >
             LOGIN
           </Link>
           <Link
             className={`bground1 py-4 px-4 rounded-[50px] w-[130px]`}
-            href="/trade/auth"
+            href="/trade/register"
           >
             REGISTER
           </Link>

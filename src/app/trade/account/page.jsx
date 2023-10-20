@@ -84,7 +84,7 @@ const Account = () => {
   }
 
   if (session.status === "unauthenticated") {
-    router?.push("/trade/auth");
+    router?.push("/trade/login");
   }
 
   const showBar = () => {

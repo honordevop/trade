@@ -1,6 +1,6 @@
 "use client";
-import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+// import { useRouter } from "next/navigation";
+// import React, { useState } from "react";
 import { toast } from "react-toastify";
 
 const Register = ({ showValue }) => {
@@ -51,7 +51,7 @@ const Register = ({ showValue }) => {
       // console.log(data);
       toast(data.message);
       res.status === 201 &&
-        router.push("/trade/auth?success=Account has been created");
+        router.push("/trade/login?success=Account has been created");
     } catch (err) {
       // setErr(true);
       console.log(err);

@@ -24,7 +24,7 @@ const Navbar = () => {
             <Link href="/" className="hover:text-[#307ea1]">
               Home
             </Link>
-            <Link href="/trade/auth" className="hover:text-[#307ea1]">
+            <Link href="/trade/register" className="hover:text-[#307ea1]">
               Get Started
             </Link>
             <Link href="/#faq" className="hover:text-[#307ea1]">
@@ -39,7 +39,7 @@ const Navbar = () => {
           </ul>
           <div className={`flex gap-5 cursor-pointer font-light`}>
             <Link
-              href="/trade/auth"
+              href="/trade/login"
               className={`bground py-2 px-4 rounded-[20px] w-[120px]`}
             >
               LOGIN
@@ -50,7 +50,7 @@ const Navbar = () => {
               </button>
             )}
             <Link
-              href="/trade/auth"
+              href="/trade/register"
               className={`bground py-2 px-4 rounded-[20px]`}
             >
               REGISTER
@@ -82,7 +82,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/trade/auth"
+              href="/trade/register"
               onClick={() => SetshowNav(false)}
               className="hover:text-[#307ea1]"
             >
@@ -112,13 +112,13 @@ const Navbar = () => {
           </ul>
           <div className={`flex gap-5 cursor-pointer font-light`}>
             <Link
-              href="/trade/auth"
+              href="/trade/login"
               className={`bground py-2 px-4 rounded-[20px] w-[120px]`}
             >
               LOGIN
             </Link>
             <Link
-              href="/trade/auth"
+              href="/trade/register"
               className={`bground py-2 px-4 rounded-[20px]`}
             >
               REGISTER

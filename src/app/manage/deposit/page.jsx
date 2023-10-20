@@ -39,7 +39,7 @@ const Deposit = () => {
   }
 
   if (session.status === "unauthenticated") {
-    router?.push("/trade/auth");
+    router?.push("/trade/login");
   }
 
   const handleSubmit = async (e) => {
@@ -63,7 +63,7 @@ const Deposit = () => {
       e.target.reset();
 
       // res.status === 201 &&
-      //   router.push("/trade/auth?success=Account has been created");
+      //   router.push("/trade/login?success=Account has been created");
     } catch (err) {
       // setErr(true);
       console.log(err);
