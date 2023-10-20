@@ -46,6 +46,7 @@ const handler = NextAuth({
   pages: {
     error: "/trade/login",
   },
+  site: process.env.NEXTAUTH_URL,
 });
 
 export { handler as GET, handler as POST };
