@@ -29,8 +29,8 @@ const Dashboard = () => {
     `/api/users?email=${session?.data?.user.email}`,
     fetcher
   );
-  console.log(data);
-  console.log(user);
+  // console.log(data);
+  // console.log(user);
 
   // if (data) {
   //   console.log(data);
@@ -45,9 +45,18 @@ const Dashboard = () => {
   if (!data) {
     return (
       <div className="absolute h-[100vh] w-[100vw] flex items-center justify-center">
-        <div>
-          <h5>Loading Data...</h5>
-        </div>
+        <CirclesWithBar
+          height="100"
+          width="100"
+          color="#5965F9"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+          outerCircleColor=""
+          innerCircleColor=""
+          barColor=""
+          ariaLabel="circles-with-bar-loading"
+        />
       </div>
     );
   }
@@ -91,7 +100,7 @@ const Dashboard = () => {
   if (session.status === "authenticated") {
     return (
       <div className="relative w-full bg-[#191f3a]">
-        <div className="w-full h-[80px] md:h-[90px] flex  items-center px-[20px] md:px-[100px] lg:px-[150px]">
+        <div className="w-full h-[80px] md:h-max flex  items-center px-[20px] md:px-[100px] lg:px-[150px]">
           <div className="w-0 md:w-[300px] h-full"></div>
           <div className=" w-full flex  items-center justify-between md:justify-end">
             {/* Mobile Sidebar Controller */}
@@ -119,7 +128,7 @@ const Dashboard = () => {
         {/* Desktop Sidebar */}
         <div className="flex ">
           <DesktopSideBar />
-          <div className="bg-[#0c1023] h-[90vh] p-3 w-full">
+          <div className="bg-[#0c1023] h-max p-3 w-full">
             <DashboardTop />
             {/* Status Card */}
             <div className="w-full">

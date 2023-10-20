@@ -1,16 +1,23 @@
 import React from "react";
-import { Ticker, ForexCrossRates } from "react-ts-tradingview-widgets";
+import {
+  Ticker,
+  ForexCrossRates,
+  AdvancedRealTimeChart,
+  MarketData,
+} from "react-ts-tradingview-widgets";
 
 const TradeviewSingleTicker = () => {
   return (
-    <div className="py-4">
+    <div className="py-4 flex flex-col gap-3">
       <Ticker colorTheme="dark"></Ticker>
       <ForexCrossRates
         colorTheme="dark"
         className="overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-300"
         autosize
       ></ForexCrossRates>
-      <div
+      <AdvancedRealTimeChart theme="dark" autosize></AdvancedRealTimeChart>
+      <MarketData colorTheme="dark" width="100%" height={400}></MarketData>
+      {/* <div
         style={{
           height: "433px",
           backgroundColor: "#1D2330",
@@ -75,7 +82,7 @@ const TradeviewSingleTicker = () => {
           </a>
           &nbsp;by Coinlib
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
